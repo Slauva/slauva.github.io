@@ -1,0 +1,49 @@
+@import '_vars';
+@import '_mixins';
+// Big screens
+@media only screen and (min-width: 1824px) {
+}
+
+// Large desktops and laptops
+@media screen and (min-width: 1224px) {
+}
+
+// Portrait tablets and medium desktops
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .box__image {
+        display: none;
+    }
+}
+
+// Portrait tablets and small desktops
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+// Landscape phones and portrait tablets
+@media screen and (max-width: 767px) {
+    .header__top {
+        .menu {
+            display: block;
+        }
+        .wrap {
+            display: none;
+        }
+    }
+}
+
+// Landscape phones and smaller
+@media screen and (max-width: 480px) {
+}
+
+// По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:
+
+@media screen and (max-width: 650) {
+}
+
+// Iphone 4
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+}
