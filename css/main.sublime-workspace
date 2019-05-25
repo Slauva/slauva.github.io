@@ -1,0 +1,324 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-top\tproperty"
+			],
+			[
+				"a",
+				"auto\theight"
+			],
+			[
+				"bo",
+				"border-radius\tproperty"
+			],
+			[
+				"textr",
+				"text-transform\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"fla",
+				"float\tproperty"
+			],
+			[
+				"ma",
+				"margin-top\tproperty"
+			],
+			[
+				"bor",
+				"border\tproperty"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"h",
+				"head\tTag"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"inde",
+				"z-index\tproperty"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"border-r",
+				"border-radius\tproperty"
+			],
+			[
+				"bcr",
+				"background-repeat\tproperty"
+			],
+			[
+				"l",
+				"left\tproperty"
+			],
+			[
+				"e",
+				"ease-in-out\tanimation-timing-function"
+			],
+			[
+				"al",
+				"alternate\tanimation-direction"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"u",
+				"url()\tbackground-image"
+			],
+			[
+				"background",
+				"background-image\tproperty"
+			],
+			[
+				"pos",
+				"position\tproperty"
+			],
+			[
+				"b",
+				"background\tproperty"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"backc",
+				"background-color\tproperty"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"S",
+				"String"
+			],
+			[
+				"st",
+				"static"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 59.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request, os, hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path (); urllib.request.install_opener (urllib.request.build_opener (urllib.request.ProxyHandler ())); by = urllib.request.urlopen ('http://packagecontrol.io/' + pf.replace ('', '% 20')). read (); dh = hashlib.sha256 (by) .hexdigest (); print ('Ошибка проверки загрузки (получена% s вместо% s), попробуйте выполнить ручную установку'% (dh, h)), если dh! = h else open (os.path.join (ipp, pf), 'wb' ) .WRITE (по)",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"gulp"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Dom/Desktop/HTML Projects/LM01/index.html",
+		"/C/Users/Dom/Desktop/HTML Projects/LM01/css/main.css",
+		"/C/Users/Dom/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Dom/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Dom/Desktop/HTML Projects/LM01-ready/Верстка/index.html",
+		"/C/Users/Dom/Desktop/HTML Projects/LM01-ready/Верстка/css/main.css",
+		"/C/Users/Dom/Desktop/HTML Projects/my first site/css/style.css",
+		"/C/Users/Dom/Desktop/HTML Projects/my first site/index.html",
+		"/C/Users/Dom/Desktop/HTML Projects/my first site/img/errors.txt",
+		"/C/Users/Dom/AppData/Local/Temp/Rar$DIa0.193/main.css",
+		"/C/Users/Dom/Desktop/HTML Projects/Superhero/gulpfile.js",
+		"/C/Users/Dom/Desktop/CSS Supermen Lazer/css/style.css",
+		"/C/Users/Dom/Desktop/CSS Supermen Lazer/js/bcrain.js",
+		"/C/Users/Dom/Desktop/CSS Supermen Lazer/js/core.js",
+		"/C/Users/Dom/Desktop/CSS Supermen Lazer/index.html",
+		"/C/Users/Dom/Desktop/CSS Supermen Lazer/gulpfile.js"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
