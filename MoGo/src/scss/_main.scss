@@ -53,6 +53,13 @@ h6 {
         box-shadow: none;
     }
 }
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 55px 0;
+}
 // Header
 
 .header {
@@ -188,22 +195,24 @@ h6 {
 
 .section {
     padding: 80px 0;
-    text-align: center;
     &__header {
         width: 100%;
         max-width: 955px;
-        margin: 0 auto 40px;
+        margin: 0 auto 50px;
+        text-align: center;
     }
     &__suptitle {
         font-size: 24px;
         color: #333333;
         font-family: 'Kaushan Script', cursive;
+        text-align: center;
     }
     &__title {
         font-size: 30px;
         font-weight: 700;
         color: #333333;
         text-transform: uppercase;
+        text-align: center;
         &::after {
             content: '';
             display: block;
@@ -214,16 +223,28 @@ h6 {
         }
     }
     &__text {
+        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         color: #999999;
+        text-align: center;
+    }
+    &--devices {
+        background: url(../img/feauture.jpeg) no-repeat center;
+        background-size: cover;
+        padding-bottom: 0;
+        margin-bottom: 40px;
+    }
+    &--grey {
+        background-color: #f8f8f8;
     }
 }
 
-// About
-.about {
+// Card
+.card {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
+    text-align: center;
     &__img {
         background: $gradient;
         transition: transform 0.2s linear;
@@ -234,14 +255,20 @@ h6 {
     }
     &__item {
         width: 380px;
-        background: $celadon;
-        position: relative;
+        transition: 0.2s;
     }
-    &__item:hover .about__img {
+    &__inner:hover .card__img {
         transform: translate3d(-10px, -10px, 0);
     }
-    &__item:hover .about__img img {
+    &__inner:hover .card__img img {
         opacity: 0.1;
+    }
+    &__inner:hover &__text {
+        opacity: 1;
+    }
+    &__inner {
+        background: $celadon;
+        position: relative;
     }
     &__text {
         width: 100%;
@@ -256,11 +283,23 @@ h6 {
         translate: opacity 0.2s linear;
         opacity: 0;
     }
-    &__item:hover &__text {
-        opacity: 1;
+    &__info {
+        margin-top: 30px;
+    }
+    &__name {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    &__prof {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999;
     }
 }
-
 // Statistics
 
 .statistics {
@@ -287,4 +326,234 @@ h6 {
         font-size: 14px;
         text-transform: uppercase;
     }
+}
+
+// Services
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    &__item {
+        flex: 1 1 0;
+        padding-left: 85px;
+        padding-right: 35px;
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        top: 5px;
+        left: 28px;
+        z-index: 1;
+    }
+    &__title {
+        font-size: 14px;
+        color: #333;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #999;
+    }
+}
+
+// Devices
+.devices {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    &__item {
+        display: block;
+    }
+    &__item:last-child {
+        position: absolute;
+        z-index: 2;
+        bottom: -80px;
+        right: -30px;
+    }
+}
+// What we do
+
+.wedo {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: 50%;
+    }
+}
+
+// Accordion
+
+.accordion {
+    &__item {
+        border: 1px solid #e5e5e5;
+        margin-bottom: 10px;
+    }
+    &__item.active &__content {
+        display: block;
+    }
+    &__item.active &__header::after {
+        transform: rotate(-45deg);
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+    &__header::after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+
+        border-top: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        z-index: 1;
+
+        transform: rotate(135deg);
+    }
+    &__Icon {
+        padding: 14px 15px;
+    }
+    &__title {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #333;
+        padding: 15px 0;
+    }
+    &__content {
+        border-top: 1px solid #e5e5e5;
+        padding: 15px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 300;
+        color: #999;
+
+        display: none;
+    }
+}
+
+// Reviews
+
+.reviews {
+    padding: 0 110px;
+    position: relative;
+    width: 100%;
+    &__btn {
+        font-size: 0;
+        color: transparent;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+
+        &::before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            border-top: 2px solid #ccc;
+            border-left: 2px solid #ccc;
+        }
+        &--prev {
+            left: -70px;
+            transform: rotate(-45deg);
+        }
+        &--next {
+            right: -70px;
+            transform: rotate(135deg);
+        }
+    }
+    &__item {
+        padding-left: 205px;
+        position: relative;
+    }
+    &__photo {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border: 3px solid $celadon;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 300;
+        color: #999;
+    }
+    &__author {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 24px;
+        padding-left: 70px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: $red;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// Social
+
+.social {
+    display: flex;
+    justify-content: center;
+    &__item {
+        width: 55px;
+        height: 55px;
+        margin: 0 1px;
+
+        text-align: center;
+        color: $red;
+        font-size: 28px;
+
+        background-color: $yellow;
+        position: relative;
+        transition: color 0.1s linear, background-color 0.1s linear;
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__item:hover {
+        color: #fff;
+        background-color: $red;
+    }
+}
+
+// Logos
+
+.logos {
+    display: flex;
+    justify-content: space-between;
 }
