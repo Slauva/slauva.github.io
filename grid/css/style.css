@@ -1,0 +1,128 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 72px;
+}
+h1 + p {
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+    margin-top: 109px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+p {
+    font-size: 36px;
+    font-weight: bold;
+    width: 534px;
+    margin-bottom: 70px;
+}
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 27px;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+        'a a a a'
+        'a a a a'
+        'b b c c'
+        'd f g e'
+        'h h j i'
+        'k k l l';
+}
+.grid-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 508px;
+}
+/* Box */
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 209px;
+    transform: translateY(-50%);
+}
+/* Header */
+.grid-item-main {
+    background-image: url(../img/bg-main.png);
+    grid-area: a;
+    height: 100vh;
+    position: relative;
+    padding: 110px 0;
+}
+.grid-item-main h1 {
+    width: 602px;
+}
+.grid-item-main p {
+    width: 634px;
+    font-weight: bold;
+}
+/* Second line */
+.grid-item-red {
+    background-image: url(../img/bg-red.png);
+    grid-area: b;
+}
+.grid-item-lgray {
+    background-color: #f3f1ef;
+    grid-area: c;
+    padding: 0 64px 0 200px;
+}
+
+/* Third line */
+.grid-item-pic1 {
+    background-image: url(../img/bg-one.png);
+    grid-area: d;
+}
+.grid-item-pic2 {
+    background-image: url(../img/bg-five.png);
+    grid-area: f;
+}
+.grid-item-pic3 {
+    background-image: url(../img/bg-four.png);
+    grid-area: g;
+}
+.grid-item-pic4 {
+    background-image: url(../img/bg-three.png);
+    grid-area: e;
+}
+/* Fourth line */
+.grid-item-blue-text {
+    grid-area: h;
+
+    padding-left: 209px;
+}
+.grid-item-pic5 {
+    background-image: url(../img/bg-two.png);
+    grid-area: j;
+}
+.grid-item-bluebg {
+    grid-area: i;
+}
+.grid-item-blue {
+    background-color: #3f729b;
+    color: #fff;
+}
+/* Footer */
+.grid-item-green {
+    background-color: #2ebd59;
+    color: #fff;
+    grid-area: k;
+
+    padding-left: 209px;
+}
+.grid-item-gray {
+    background-color: #282b2f;
+    color: #fff;
+    grid-area: l;
+
+    padding: 0 64px 0 200px;
+}
