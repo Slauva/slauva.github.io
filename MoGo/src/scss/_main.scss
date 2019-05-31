@@ -7,7 +7,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    color: #333333;
+    color: $grey;
 }
 
 *,
@@ -35,19 +35,19 @@ h6 {
     display: inline-block;
     vertical-align: top;
     padding: 8px 30px;
-    border: 4px solid #fff;
+    border: 4px solid $light-color;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: $light-color;
 
     cursor: pointer;
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
     transition: box-shadow 0.2s linear, color 0.2s linear, background-color 0.2s linear;
     &:hover {
-        color: #333;
-        background-color: #fff;
+        color: $grey;
+        background-color: $light-color;
     }
     &:active {
         box-shadow: none;
@@ -73,7 +73,7 @@ h6 {
     &__logo {
         font-size: 30px;
         font-weight: bold;
-        color: #ffffff;
+        color: $light-color;
     }
     &__inner {
         display: flex;
@@ -91,7 +91,7 @@ h6 {
         margin: 0 15px;
         padding-bottom: 6px;
         border-bottom: 3px solid transparent;
-        color: #ffffff;
+        color: $light-color;
         text-decoration: none;
         transition: color 0.2s linear, border 0.2s linear;
     }
@@ -117,7 +117,7 @@ h6 {
     justify-content: center;
     &__suptitle {
         margin-bottom: 20px;
-        color: #fff;
+        color: $light-color;
         font-size: 72px;
         font-family: 'Kaushan Script', cursive;
     }
@@ -125,7 +125,7 @@ h6 {
         font-size: 150px;
         font-weight: bold;
         text-transform: uppercase;
-        color: #fff;
+        color: $light-color;
         line-height: 140px;
         &:after {
             content: '';
@@ -133,7 +133,7 @@ h6 {
             width: 60px;
             height: 3px;
             margin: 60px auto;
-            background-color: white;
+            background-color: $light-color;
         }
     }
     &__inner {
@@ -161,10 +161,10 @@ h6 {
         flex-basis: 23%;
         position: relative;
 
-        border-top: 3px solid #fff;
+        border-top: 3px solid $light-color;
 
         font-size: 18px;
-        color: #ffffff;
+        color: $light-color;
         text-transform: uppercase;
 
         opacity: 0.7;
@@ -203,14 +203,14 @@ h6 {
     }
     &__suptitle {
         font-size: 24px;
-        color: #333333;
+        color: $grey;
         font-family: 'Kaushan Script', cursive;
         text-align: center;
     }
     &__title {
         font-size: 30px;
         font-weight: 700;
-        color: #333333;
+        color: $grey;
         text-transform: uppercase;
         text-align: center;
         &::after {
@@ -225,7 +225,7 @@ h6 {
     &__text {
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        color: #999999;
+        color: $light-grey;
         text-align: center;
     }
     &--devices {
@@ -236,6 +236,11 @@ h6 {
     }
     &--grey {
         background-color: #f8f8f8;
+    }
+    &--clients {
+        background-color: #f5f5f5;
+        background: url(../img/section.png) no-repeat center;
+        background-size: cover;
     }
 }
 
@@ -272,7 +277,7 @@ h6 {
     }
     &__text {
         width: 100%;
-        color: #fff;
+        color: $light-color;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 18px;
@@ -289,7 +294,7 @@ h6 {
     &__name {
         text-transform: uppercase;
         font-size: 14px;
-        color: #333;
+        color: $grey;
         margin-bottom: 5px;
     }
     &__prof {
@@ -297,7 +302,7 @@ h6 {
         font-size: 15px;
         font-weight: 300;
         font-style: italic;
-        color: #999;
+        color: $light-grey;
     }
 }
 // Statistics
@@ -309,7 +314,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    color: #fff;
+    color: $light-color;
     &__item {
         flex: 1 1 0;
         border-left: 1px solid #b5eae0;
@@ -348,14 +353,14 @@ h6 {
     }
     &__title {
         font-size: 14px;
-        color: #333;
+        color: $grey;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
     &__text {
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        color: #999;
+        color: $light-grey;
     }
 }
 
@@ -426,7 +431,7 @@ h6 {
     &__title {
         font-size: 14px;
         text-transform: uppercase;
-        color: #333;
+        color: $grey;
         padding: 15px 0;
     }
     &__content {
@@ -436,7 +441,7 @@ h6 {
         font-size: 15px;
         font-style: italic;
         font-weight: 300;
-        color: #999;
+        color: $light-grey;
 
         display: none;
     }
@@ -498,7 +503,7 @@ h6 {
         font-size: 24px;
         font-style: italic;
         font-weight: 300;
-        color: #999;
+        color: $light-grey;
     }
     &__author {
         font-family: 'Kaushan Script', cursive;
@@ -546,7 +551,7 @@ h6 {
         }
     }
     &__item:hover {
-        color: #fff;
+        color: $light-color;
         background-color: $red;
     }
 }
@@ -556,4 +561,99 @@ h6 {
 .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+// Gallery
+.works {
+    display: flex;
+    color: $light-color;
+    margin-top: 100px;
+    &__col {
+        flex: 1 1 0;
+    }
+    &__item {
+        position: relative;
+        background: $gradient;
+    }
+    &__item:hover &__image {
+        opacity: 0.1;
+    }
+    &__item:hover &__info {
+        opacity: 1.1;
+    }
+    &__image {
+        display: block;
+        max-width: 100%;
+        transition: opacity 0.2s linear;
+    }
+    &__info {
+        width: 100%;
+        text-align: center;
+        @include center();
+        opacity: 0;
+        transition: opacity 0.2s linear;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+    }
+}
+
+// Clients
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    &__item {
+        width: 50%;
+        padding: 0 45px 0 175px;
+        position: relative;
+        margin-bottom: 60px;
+    }
+    &__photo {
+        width: 110px;
+        height: 110px;
+
+        border-radius: 50%;
+
+        position: absolute;
+        top: 0;
+        left: 40px;
+        z-index: 1;
+    }
+    &__name {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $grey;
+    }
+    &__prof {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        color: $light-grey;
+        &::before {
+            content: '';
+            width: 60px;
+            height: 3px;
+            display: block;
+            background-color: $red;
+            margin: 15px 0;
+        }
+    }
 }
