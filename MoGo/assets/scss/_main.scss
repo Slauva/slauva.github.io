@@ -27,8 +27,13 @@ h6 {
 // Tools
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page {
+    overflow: hidden;
 }
 
 .btn {
@@ -80,6 +85,19 @@ h6 {
         justify-content: space-between;
         align-items: center;
     }
+    &.fixed {
+        padding: 10px 0;
+        background-color: #eb8b8d;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        transform: translate3d(0, 0, 0);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    &.active {
+        background-color: #eb8b8d;
+    }
 }
 .nav {
     text-transform: uppercase;
@@ -105,16 +123,85 @@ h6 {
     }
 }
 
+// nav toggle
+
+.nav-toggle {
+    padding: 10px 0;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    &__item {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        font-size: 0;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            top: -8px;
+            left: 0;
+            z-index: 1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            bottom: -8px;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    &.active {
+        .nav-toggle__item {
+            transition: background-color 0.3s linear, transform 0.3s linear;
+            background-color: transparent;
+            &::before {
+                top: 0;
+                transition: transform 0.3s linear;
+                transform: rotate(45deg);
+            }
+            &::after {
+                bottom: 0;
+                transition: transform 0.3s linear;
+                transform: rotate(135deg);
+            }
+        }
+    }
+}
+
 // Intro
 
 .intro {
     width: 100%;
     height: 100vh;
+    min-height: 820px;
     background: url(../img/header.jpeg) no-repeat center top;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     &__suptitle {
         margin-bottom: 20px;
         color: $light-color;
@@ -252,19 +339,23 @@ h6 {
 // Card
 .card {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 80px;
+    margin: 80px -15px 0;
     text-align: center;
     &__img {
         background: $gradient;
         transition: transform 0.2s linear;
         img {
             display: block;
+            max-width: 100%;
+            height: auto;
             transition: opacity 0.1s linear;
         }
     }
     &__item {
-        width: 380px;
+        width: 33.33333%;
+        padding: 0 15px;
         transition: 0.2s;
     }
     &__inner:hover .card__img {
@@ -317,6 +408,7 @@ h6 {
 }
 .stat {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
     color: $light-color;
@@ -342,13 +434,17 @@ h6 {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
     &__item {
-        flex: 1 1 0;
-        padding-left: 85px;
-        padding-right: 35px;
+        width: 33.33333%;
+        padding: 0 35px 40px 85px;
         position: relative;
+        margin-bottom: 40px;
+        &--border {
+            border-bottom: 1px solid #e5e5e5;
+        }
     }
     &__icon {
         position: absolute;
@@ -377,8 +473,10 @@ h6 {
     position: relative;
     &__item {
         display: block;
+        max-width: 100%;
+        height: auto;
     }
-    &__item:last-child {
+    &__item--iphone {
         position: absolute;
         z-index: 2;
         bottom: -80px;
@@ -390,8 +488,15 @@ h6 {
 .wedo {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
     &__item {
         width: 50%;
+        padding: 0 15px;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -485,7 +590,7 @@ h6 {
         }
     }
     &__item {
-        padding-left: 205px;
+        padding-left: 235px;
         position: relative;
     }
     &__photo {
@@ -493,14 +598,20 @@ h6 {
         height: 150px;
         position: absolute;
         border: 3px solid $celadon;
-        top: 0;
+        top: 50%;
         left: 0;
+        transform: translateY(-50%);
         z-index: 1;
         img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+        &--user {
+            border-radius: 50%;
+            width: 210px;
+            height: 210px;
         }
     }
     &__text {
@@ -567,11 +678,21 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+    &__item {
+        padding: 0 15px;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
 }
 
 // Gallery
 .works {
     display: flex;
+    flex-wrap: wrap;
     color: $light-color;
     margin-top: 100px;
     &__col {
@@ -792,17 +913,26 @@ h6 {
     &__inner {
         padding-bottom: 65px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        margin: 0 -15px;
     }
     &__col {
-        &:first-child {
+        padding: 0 15px;
+        &--first {
             width: 40%;
         }
-        &:nth-child(2) {
+        &--second {
             width: 29%;
         }
-        &:last-child {
-            width: 23%;
+        &--last {
+            width: 100%;
+            max-width: 300px;
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
         }
     }
     &__title {
@@ -912,8 +1042,6 @@ h6 {
     &__item {
         display: flex;
         margin-bottom: 30px;
-    }
-    &__img {
     }
     &__content {
         padding-left: 20px;
