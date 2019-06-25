@@ -142,6 +142,10 @@ h6 {
   border-bottom: 3px solid #fce38a;
 }
 
+.nav.active {
+  display: block;
+}
+
 .nav-toggle {
   padding: 10px 0;
   position: absolute;
@@ -665,7 +669,8 @@ h6 {
   width: 100%;
 }
 
-.reviews__btn {
+.reviews__btn,
+.reviews .slick-arrow {
   font-size: 0;
   color: transparent;
   position: absolute;
@@ -673,9 +678,13 @@ h6 {
   z-index: 1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  border: 0;
+  background: none;
+  outline: none;
 }
 
-.reviews__btn::before {
+.reviews__btn::before,
+.reviews .slick-arrow::before {
   content: '';
   display: block;
   width: 16px;
@@ -684,13 +693,19 @@ h6 {
   border-left: 2px solid #ccc;
 }
 
-.reviews__btn--prev {
+.reviews__btn--prev,
+.reviews__btn .slick-prev,
+.reviews .slick-arrow--prev,
+.reviews .slick-arrow .slick-prev {
   left: -70px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.reviews__btn--next {
+.reviews__btn--next,
+.reviews__btn .slick-next,
+.reviews .slick-arrow--next,
+.reviews .slick-arrow .slick-next {
   right: -70px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
@@ -702,8 +717,8 @@ h6 {
 }
 
 .reviews__photo {
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 210px;
   position: absolute;
   border: 3px solid #95e1d3;
   top: 50%;
@@ -754,6 +769,10 @@ h6 {
   z-index: 1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.slick-slide {
+  min-height: 210px !important;
 }
 
 .social {
@@ -1402,7 +1421,7 @@ h6 {
     top: 100%;
     left: 0;
     background-color: #eb8b8d;
-    text-align: center;
+    text-align: left;
   }
   .nav__link {
     display: block;

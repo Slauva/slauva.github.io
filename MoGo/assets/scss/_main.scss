@@ -121,6 +121,9 @@ h6 {
         color: $yellow;
         border-bottom: 3px solid $yellow;
     }
+    &.active {
+        display: block;
+    }
 }
 
 // nav toggle
@@ -563,14 +566,17 @@ h6 {
     padding: 0 110px;
     position: relative;
     width: 100%;
-    &__btn {
+    &__btn,
+    .slick-arrow {
         font-size: 0;
         color: transparent;
         position: absolute;
         top: 50%;
         z-index: 1;
         transform: translateY(-50%);
-
+        border: 0;
+        background: none;
+        outline: none;
         &::before {
             content: '';
             display: block;
@@ -580,11 +586,13 @@ h6 {
             border-top: 2px solid #ccc;
             border-left: 2px solid #ccc;
         }
-        &--prev {
+        &--prev,
+        .slick-prev {
             left: -70px;
             transform: rotate(-45deg);
         }
-        &--next {
+        &--next,
+        .slick-next {
             right: -70px;
             transform: rotate(135deg);
         }
@@ -594,8 +602,8 @@ h6 {
         position: relative;
     }
     &__photo {
-        width: 150px;
-        height: 150px;
+        width: 210px;
+        height: 210px;
         position: absolute;
         border: 3px solid $celadon;
         top: 50%;
@@ -641,6 +649,9 @@ h6 {
     }
 }
 
+.slick-slide {
+    min-height: 210px !important;
+}
 // Social
 
 .social {

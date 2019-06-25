@@ -5,17 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Mogo</title>
-        <link rel="stylesheet" href="../css/style.min.css" />
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto:300i,400,700,900&amp;subset=cyrillic-ext" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="../css/style.min.css" />
     </head>
     <body>
         <!-- Header nav panel -->
         <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="header__logo">MoGo</div>
+                    <div class="header__logo " data-scroll="#intro">MoGo</div>
                     <nav class="nav">
                         <a href="#" class="nav__link" data-scroll="#about">About</a>
                         <a href="#" class="nav__link" data-scroll="#service">Service</a>
@@ -182,7 +183,7 @@
                         <div class="wedo__item"><img class="wedo__img" src="../img/service.png" alt="Service" /></div>
                         <div class="wedo__item">
                             <div class="accordion">
-                                <div class="accordion__item active">
+                                <div class="accordion__item ">
                                     <div class="accordion__header">
                                         <img src="../img/icons/PICTURE.png" alt="Picture" class="accordion__Icon" />
                                         <div class="accordion__title">Photography</div>
@@ -218,12 +219,27 @@
             <div class="section section--grey">
                 <div class="container">
                     <div class="reviews">
-                        <div class="reviews__item">
-                            <a href="javascript:void 0" class="reviews__btn reviews__btn--prev">Prev</a>
-                            <a href="javascript:void 0" class="reviews__btn reviews__btn--next">Next</a>
-                            <div class="reviews__photo"><img src="../img/icons/SPEECH.png" alt="Speech" class="" /></div>
-                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="reviews__author">Jon Doe</div>
+                        <div data-slider>
+                            <div class="reviews__item">
+                                <div class="reviews__photo"><img src="../img/icons/SPEECH.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Jon Doe</div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__photo reviews__photo--user"><img src="../img/Users/1.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Joshua Earle</div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__photo"><img src="../img/icons/SPEECH.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Jon Doe</div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__photo reviews__photo--user"><img src="../img/Users/1.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Joshua Earle</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -400,12 +416,27 @@
             <div class="section">
                 <div class="container">
                     <div class="reviews">
-                        <div class="reviews__item">
-                            <a href="javascript:void 0" class="reviews__btn reviews__btn--prev">Prev</a>
-                            <a href="javascript:void 0" class="reviews__btn reviews__btn--next">Next</a>
-                            <div class="reviews__photo reviews__photo--user"><img src="../img/Users/1.png" alt="Speech" class="" /></div>
-                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="reviews__author">Joshua Earle</div>
+                        <div data-slider>
+                            <div class="reviews__item">
+                                <div class="reviews__photo reviews__photo--user"><img src="../img/Users/1.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Joshua Earle</div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__photo"><img src="../img/icons/SPEECH.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Jon Doe</div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__photo reviews__photo--user"><img src="../img/Users/1.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Joshua Earle</div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__photo"><img src="../img/icons/SPEECH.png" alt="Speech" class="" /></div>
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="reviews__author">Jon Doe</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -618,6 +649,7 @@
             </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="../js/app.js"></script>
     </body>
 </html>
