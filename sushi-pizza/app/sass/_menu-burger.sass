@@ -1,0 +1,25 @@
+.ham 
+    cursor: pointer
+    tap-highlight-color: transparent
+    transition: transform 400ms
+    user-select: none
+
+.hamRotate.active 
+    transform: rotate(45deg)
+.line 
+    fill: none
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms
+    stroke: #FFF
+    stroke-width: 3 // Can change stroke height
+    stroke-linecap: round
+
+.ham1
+    .top 
+        stroke-dasharray: 40 139
+    .bottom
+        stroke-dasharray: 40 180
+.ham1.active
+    .top 
+        stroke-dashoffset: -98px
+    .bottom 
+        stroke-dashoffset: -138px

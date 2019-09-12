@@ -1,0 +1,11 @@
+@mixin abs_center()
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+@mixin container($width: $container-width)
+	width: 100%
+	max-width: $width
+	padding: 0 $gutter/2
+	margin: 0 auto

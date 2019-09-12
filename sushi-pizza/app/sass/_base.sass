@@ -1,0 +1,50 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	
+::placeholder
+	color: #666
+
+// ::selection
+// 	background-color: $accent
+// 	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+.container
+	width: 100%
+	max-width: $container-width
+	padding:
+		right: $gutter/2
+		left: $gutter/2
+	margin:
+		left: auto
+		right: auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+ul, li, ol
+	margin: 0
+	padding: 0
+	list-style: none
+	display: inline
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: $text
+	&:focus
+		color: $text
