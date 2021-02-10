@@ -1,0 +1,38 @@
+* , *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+h1 {
+    @include font(52px, 59px, $dark_blue);
+}
+
+h2 {
+    @include font(38px, 43px, $dark_blue);
+}
+
+h3 {
+    @include font(32px, 36px, $dark_blue);
+}
+
+h4 {
+    @include font(20px, 23px, $dark_blue);
+}
+
+h5 {
+    @include font(18px, 20px, $dark_blue);
+}
+
+h6 {
+    @include font(14px, 15px, $dark_blue);
+}
+
+p {
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color: $dark_blue;
+}

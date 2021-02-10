@@ -1,0 +1,113 @@
+@media (max-width: 900px) {
+    .navbar{
+        height: 46px;
+        &__logo > img{
+            width: 90%;
+            height: 90%;
+        }
+    }
+    .wrapper{
+        height: 46px;
+    }
+    .section{
+        margin-top: 46px;
+    }
+    .section__title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .events {
+        &__item{
+            height: 250px;
+        }
+        &__title{
+            font-size: 20px;
+            line-height: 23px;
+        }
+        &__date{
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__info{
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 15px;
+        }
+        &__tag{
+            font-size: 14px;
+            line-height: 15px;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .section__title{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .events {
+        &__item{
+            height: 200px;
+        }
+        &__title{
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__date{
+            font-size: 14px;
+            line-height: 15px;
+        }
+        &__text{
+            padding: 15px 40px;
+        }
+        &__info{
+            margin-top: 15px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        &__tags{
+            left: 40px;
+            bottom: 15px;
+        }
+        &__tag{
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .section__title{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .events {
+        &__item{
+            height: 150px;
+        }
+        &__title{
+            font-size: 14px;
+            line-height: 15px;
+        }
+        &__date{
+            font-size: 10px;
+            line-height: 12px;
+        }
+        &__text{
+            padding: 10px 30px;
+        }
+        &__info{
+            margin-top: 10px;
+            font-size: 7px;
+            line-height: 10px;
+        }
+        &__tags{
+            left: 30px;
+            bottom: 10px;
+        }
+        &__tag{
+            font-size: 7px;
+            line-height: 10px;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@import "vars";
+@import "mixins";
+@import "options";
+@import "fonts";
+@import "burger";
+@import "nav";
+
+
+
+.container {
+    @include container(1140px, 10px)
+}
+
+.navbar {
+    background-color: $dark_blue;
+    width: 100%;
+    height: 56px;
+    z-index: 12;
+    &__logo {
+        width: 40.19px;
+        height: 51.91px;
+        position: relative;
+        z-index: 13;
+        & > img {
+            width: 100%;
+            height: 100%;
+            @include abs_center();
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.section {
+    margin-top: 56px;
+    overflow: hidden;
+    &__title {
+        text-decoration: underline;
+    }
+}
+
+.events {
+    margin-top: 35px;
+    &__item {
+        height: 300px;
+        width: 100%;
+
+        display: flex;
+        margin-bottom: 35px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.16);
+        transition: transform 0.2s linear;
+        cursor: pointer;
+
+        position: relative;
+        z-index: 1;
+
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+
+            width: calc(100% - 1px);
+            height: 100%;
+            background-color: $gray;
+            transition: transform 0.2s linear;
+        }
+
+        &:hover {
+            transform: translate3d(-10px, -10px, 0);
+            &::after{
+                transform: translate3d(10px, 10px, 0);
+            }
+        }
+
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &__image {
+        height: 100%;
+        width: 38.5%;
+        background-color: #e6e6e6;
+    }
+
+    &__text {
+        height: 100%;
+        width: calc(100% - 38.5%);
+        padding: 20px 70px;
+        background-color: #fff;
+
+        position: relative;
+    }
+
+    &__info {
+        margin-top: 25px;
+    }
+
+    &__tags {
+        position: absolute;
+        bottom: 20px;
+        left: 70px;
+    }
+
+    &__tag {
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: $purple;
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-left: 5px;
+        }
+    }
+}
+
+

@@ -1,0 +1,24 @@
+@mixin abs_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin font($font-size, $line-height, $color, $upper: 1){
+    font-family: "ShareTechMono";
+    font-size: $font-size;
+    line-height: $line-height;
+    @if $upper == 1 {
+        text-transform: uppercase;
+    }
+    color: $color;
+}
+
+@mixin container($width, $padding_horizontal, $padding_verticale: 0){
+    max-width: $width;
+    width: 100%;
+    margin: 0 auto;
+    padding: $padding_verticale  $padding_horizontal;
+}
+
